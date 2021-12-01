@@ -21,8 +21,10 @@ import contact.views
 import experience.views
 import archive.views
 import testing.views
+import home.views
 
 urlpatterns = [
+    path('', home.views.home, name='home'),
     path('admin/', admin.site.urls),
     path('projects/', projects.views.projects, name='projects'),
     path('artwork/', artwork.views.artwork, name='artwork'),
