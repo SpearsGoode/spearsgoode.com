@@ -1,0 +1,272 @@
+body {
+  overflow: hidden;
+}
+
+.landOval {
+}
+
+.landTitle {
+  font-size: 4em;
+  height: 9vh;
+  margin: 0;
+  padding: 0;
+}
+
+.landTitleH {
+}
+
+.landLogo {
+  max-width: 33vw;
+  max-height: 9vh;
+  margin: .5vh 1vw;
+  animation-name: fade;
+  animation-duration: .8s;
+  animation-fill-mode: backwards;
+  animation-delay: .8s;
+}
+
+.neonB {
+  font-weight: bold;
+  color: #000;
+  text-shadow:
+    0 0 5px #bae,
+    0 0 10px #bae,
+    0 0 20px #3b348a,
+    0 0 40px #3b348a,
+    0 0 60px #3b348a;
+  padding: 0;
+  margin: 1vh 2vw 1vh auto;
+  animation-name: fade, slideTL;
+  animation-duration: .8s;
+  animation-fill-mode: backwards;
+  animation-delay: .6s;
+}
+
+.neonR {
+  font-weight: bold;
+  color: #000;
+  text-shadow:
+    0 0 5px #bae,
+    0 0 10px #bae,
+    0 0 20px #be344c,
+    0 0 40px #be344c,
+    0 0 60px #be344c;
+  padding: 0;
+  margin: 1vh auto 1vh 2vw;
+  animation-name: fade, slideTR;
+  animation-duration: .8s;
+  animation-fill-mode: backwards;
+  animation-delay: .6s;
+}
+
+.landing {
+  height: 85vh;
+  z-index: 0;
+}
+
+.landCont {
+  height: 20vh;
+  width: 98vw;
+  margin: .5vh 1vw;
+}
+
+.landLink {
+  font-size: 4em;
+  background-color: #3f0059;
+  color: #000;
+  transition: .5s;
+}
+
+.landLink:active{
+  text-transform: scale(1.1);
+}
+
+.landLink:hover{
+  background-color: #2c2c2c;
+  transform: scale(.95);
+  color: #ccd9ff;
+}
+
+.landPro {
+  animation-duration: .8s;
+  animation-name: waterfall;
+  animation-fill-mode: backwards;
+  animation-timing-function: ease-out;
+  animation-delay: .15s;
+}
+
+.landArt {
+  animation-duration: .8s;
+  animation-name: waterfall;
+  animation-fill-mode: backwards;
+  animation-timing-function: ease-out;
+  animation-delay: .1s;
+}
+
+.landTac {
+  animation-duration: .8s;
+  animation-name: waterfall;
+  animation-fill-mode: backwards;
+  animation-timing-function: ease-out;
+  animation-delay: .05s;
+}
+
+.landFil {
+  animation-duration: .8s;
+  animation-name: waterfall;
+  animation-fill-mode: backwards;
+  animation-timing-function: ease-out;
+}
+
+@media (min-width: 992px) {
+
+  header {
+    height: 6vh;
+  }
+
+  .landOval {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 50vw;
+    height: 22vh;
+    background-image: radial-gradient(#3f0059 21%, #ccd9ff, #ccd9ff);
+    border-radius: 25vw / 11vh;
+    animation-name: fadeGradie;
+    animation-duration: 1.1s;
+    animation-fill-mode: backwards;
+    animation-timing-function: ease-in;
+    animation-delay: .6s;
+  }
+
+  .landTitle {
+    height: 0;
+    z-index: -1;
+  }
+
+  .landTitleH {
+    height: 18vh;
+  }
+
+  .landTitleH h2 {
+    font-size: 4em;
+    animation-name: fade;
+    animation-duration: .8s;
+    animation-fill-mode: backwards;
+    animation-delay: .8s;
+  }
+
+  .landLogo {
+    max-height: 16vh;
+    animation-name: fade;
+    animation-duration: .8s;
+    animation-fill-mode: backwards;
+    animation-delay: .6s;
+  }
+
+  .landing {
+    height: 88vh;
+  }
+
+  .landCont {
+    height: 41vh;
+    width: 48vw;
+    margin: 1.5vh 1vw;
+  }
+
+  .neonB {
+    margin: 1vh auto;
+  }
+
+  .neonR {
+    margin: 1vh auto;
+  }
+
+  .landPro {
+    animation-duration: .8s;
+    animation-name: slideTL;
+    animation-fill-mode: backwards;
+    animation-timing-function: ease-out;
+  }
+
+  .landArt {
+    animation-duration: .8s;
+    animation-name: slideBL;
+    animation-fill-mode: backwards;
+    animation-timing-function: ease-out;
+  }
+
+  .landTac {
+    animation-duration: .8s;
+    animation-name: slideTR;
+    animation-fill-mode: backwards;
+    animation-timing-function: ease-out;
+  }
+
+  .landFil {
+    animation-duration: .8s;
+    animation-name: slideBR;
+    animation-fill-mode: backwards;
+    animation-timing-function: ease-out;
+  }
+
+}
+
+@keyframes fade {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@keyframes fadeGradie {
+  0% {background-image: radial-gradient(#3f0059 0%, #ccd9ff, #ccd9ff);opacity: 0;}
+  3% {background-image: radial-gradient(#3f0059 1%, #ccd9ff, #ccd9ff);opacity: .1;}
+  5% {background-image: radial-gradient(#3f0059 2%, #ccd9ff, #ccd9ff);opacity: .2;}
+  10% {background-image: radial-gradient(#3f0059 3%, #ccd9ff, #ccd9ff);opacity: .3;}
+  15% {background-image: radial-gradient(#3f0059 4%, #ccd9ff, #ccd9ff);opacity: .5;}
+  20% {background-image: radial-gradient(#3f0059 5%, #ccd9ff, #ccd9ff);opacity: .7;}
+  25% {background-image: radial-gradient(#3f0059 6%, #ccd9ff, #ccd9ff);opacity: .9;}
+  30% {background-image: radial-gradient(#3f0059 7%, #ccd9ff, #ccd9ff);opacity: 1;}
+  35% {background-image: radial-gradient(#3f0059 8%, #ccd9ff, #ccd9ff);opacity: 1;}
+  40% {background-image: radial-gradient(#3f0059 9%, #ccd9ff, #ccd9ff);opacity: 1;}
+  45% {background-image: radial-gradient(#3f0059 10%, #ccd9ff, #ccd9ff);opacity: 1;}
+  50% {background-image: radial-gradient(#3f0059 11%, #ccd9ff, #ccd9ff);opacity: 1;}
+  55% {background-image: radial-gradient(#3f0059 12%, #ccd9ff, #ccd9ff);opacity: 1;}
+  60% {background-image: radial-gradient(#3f0059 13%, #ccd9ff, #ccd9ff);opacity: 1;}
+  65% {background-image: radial-gradient(#3f0059 14%, #ccd9ff, #ccd9ff);opacity: 1;}
+  70% {background-image: radial-gradient(#3f0059 15%, #ccd9ff, #ccd9ff);opacity: 1;}
+  75% {background-image: radial-gradient(#3f0059 16%, #ccd9ff, #ccd9ff);opacity: 1;}
+  80% {background-image: radial-gradient(#3f0059 17%, #ccd9ff, #ccd9ff);opacity: 1;}
+  85% {background-image: radial-gradient(#3f0059 18%, #ccd9ff, #ccd9ff);opacity: 1;}
+  90% {background-image: radial-gradient(#3f0059 19%, #ccd9ff, #ccd9ff);opacity: 1;}
+  95% {background-image: radial-gradient(#3f0059 20%, #ccd9ff, #ccd9ff);opacity: 1;}
+  100% {background-image: radial-gradient(#3f0059 21%, #ccd9ff, #ccd9ff);opacity: 1;}
+}
+
+@keyframes slideTL {
+  0% {transform: translate(-50vw, -50vh);}
+  100%{transform: translate(0,0);}
+}
+
+@keyframes slideTR {
+  0% {transform: translate(50vw, -50vh);}
+  100%{transform: translate(0,0);}
+}
+
+@keyframes slideBL {
+  0% {transform: translate(-50vw, 50vh);}
+  100%{transform: translate(0,0);}
+}
+
+@keyframes slideBR {
+  0% {transform: translate(50vw, 50vh);}
+  100%{transform: translate(0,0);}
+}
+
+@keyframes waterfall {
+  0% {transform: translateY(-100vh);}
+  100%{transform: translateY(0);}
+}

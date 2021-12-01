@@ -1,0 +1,76 @@
+html {
+
+}
+
+body {
+  background-color: #ccd9ff;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 555;
+  padding: 0;
+}
+
+header {
+  height: 13vh;
+  background-image: linear-gradient(slategrey, #ccd9ff);
+}
+
+main {
+  padding: 1vh 0 3vh 0;
+  margin: 0;
+}
+
+footer {
+  height: 6vh;
+  background-image: linear-gradient(#3f0059, black);
+}
+
+
+/* ///////////////////////////////////////// */
+.menuHome {
+  height: 9vh;
+  width: 20vw;
+}
+
+.menuLogo {
+  height: 100%;
+  width: auto;
+}
+
+.neonB {
+  font-weight: bold;
+  color: #000;
+  text-shadow:
+    0 0 5px #bae,
+    0 0 10px #bae,
+    0 0 20px #3b348a,
+    0 0 40px #3b348a,
+    0 0 60px #3b348a;
+  padding: 0;
+  margin: 0 auto;
+
+}
+
+.neonR {
+  font-weight: bold;
+  color: #000;
+  text-shadow:
+    0 0 5px #bae,
+    0 0 10px #bae,
+    0 0 20px #be344c,
+    0 0 40px #be344c,
+    0 0 60px #be344c;
+  padding: 0;
+  margin: 0 auto;
+}
+
+@media (min-width: 576px) {
+
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 992px) {
+
+}
