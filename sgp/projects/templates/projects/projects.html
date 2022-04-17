@@ -6,11 +6,11 @@
     <meta name="description" content="edit me"> <!-- ADD ME -->
     <title>Projects | SpearsGoode.com</title>
     <link rel="shortcut icon" type="image/svg" href="/static/img/logo.svg">
-    <link href="static/css/bootstrap.min.css" type="text/css" rel="stylesheet">
-    <link href="static/css/main.css" type="text/css" rel="stylesheet">
-    <link href="static/font/Quicksand-Medium.ttf" type="font/ttf" rel="stylesheet">
-    <link href="static/font/Quicksand-Bold.ttf" type="font/ttf" rel="stylesheet">
-    <link href="static/font/Quicksand-Light.ttf" type="font/ttf" rel="stylesheet">
+    <link href="/static/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="/static/css/main.css" type="text/css" rel="stylesheet">
+    <link href="/static/font/Quicksand-Medium.ttf" type="font/ttf" rel="stylesheet">
+    <link href="/static/font/Quicksand-Bold.ttf" type="font/ttf" rel="stylesheet">
+    <link href="/static/font/Quicksand-Light.ttf" type="font/ttf" rel="stylesheet">
   </head>
 
   <body>
@@ -18,7 +18,7 @@
       <nav class="navbar fixed-top navbar-expand-lg navbar-dark shadow-lg" style="background-color: #3f0059;">
         <a class="navbar-brand" href="../">
           <div class="menuHome pr-md-auto d-flex align-items-center">
-            <img class="menuLogo" src="/sgp/static/img/logo.svg" alt="Spears Goode Logo">
+            <img class="menuLogo" src="/static/img/logo.svg" alt="Spears Goode Logo">
             <div class="spearsgoode">
               <h3 class="neonB">Spears</h3>
               <h3 class="neonR">Goode</h3>
@@ -68,7 +68,7 @@
         <div class="container card text-white bg-dark shadow mb-3 px-1">
           <h3 class="text-center card-title mt-1">{{ project.title }}</h3>
           <span class="badge shadow-sm mx-3" style="background-color: #3f0059; color: #ccd9ff;">Completed {{ project.date }}</span>
-          <img src="static/{{ project.image }}" alt="project image" class="card-img-top img-fluid mt-2 shadow">
+          <img src="/static/{{ project.image }}" alt="project image" class="card-img-top img-fluid mt-2 shadow">
           <div class="card-body">
             <p class="lead">{{ project.info }}</p>
             <div class="btn-group d-flex align-items-center" role="group" aria-label="button group">
@@ -105,8 +105,8 @@
       <p>&copy; SpearsGoode</p>
     </footer>
 
-    <script src="static/js/jquery.slim.min.js"></script>
-    <script src="static/js/popper.min.js"></script>
-    <script src="static/js/bootstrap.min.js"></script>
+    <script src="/static/js/jquery.slim.min.js"></script>
+    <script src="/static/js/popper.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
   </body>
 </html>
